@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aswin.E - Cloud & DevOps Engineer. Specializing in AWS, Docker, Kubernetes, Terraform, Jenkins, and CI/CD pipelines. Building scalable cloud infrastructure." />
+  <meta name="keywords" content="Aswin.E, Cloud Engineer, DevOps Engineer, AWS, Docker, Kubernetes, Terraform, Jenkins, CI/CD" />
+  <meta name="author" content="Aswin.E" />
+  <meta property="og:title" content="Aswin.E | Cloud & DevOps Engineer" />
+  <meta property="og:description" content="Passionate Cloud & DevOps Engineer focused on building scalable cloud infrastructure, automating deployments, and implementing modern DevOps practices." />
+  <meta property="og:type" content="website" />
+  <title>Aswin.E | Cloud & DevOps Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader" class="loader" role="status" aria-label="Loading">
+    <canvas id="loader-stars" class="loader-stars"></canvas>
+    <div class="loader-orbitals" aria-hidden="true">
+      <div class="orbital orbital-1"></div>
+      <div class="orbital orbital-2"></div>
+      <div class="orbital orbital-3"></div>
+    </div>
+    <div class="loader-inner">
+      <div class="loader-logo-wrap">
+        <div class="loader-glow-ring"></div>
+        <div class="loader-logo">
+          <span>A</span><span>E</span>
+        </div>
+        <div class="loader-tech-icons" aria-hidden="true">
+          <span class="ti ti-1"><i class="fab fa-aws"></i></span>
+          <span class="ti ti-2"><i class="fab fa-docker"></i></span>
+          <span class="ti ti-3"><i class="fas fa-dharmachakra"></i></span>
+          <span class="ti ti-4"><i class="fab fa-jenkins"></i></span>
+          <span class="ti ti-5"><i class="fas fa-code-branch"></i></span>
+          <span class="ti ti-6"><i class="fas fa-cloud"></i></span>
+        </div>
+      </div>
+      <div class="loader-title">Cloud &amp; DevOps Engineer</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        <span class="loader-percent" id="loader-percent">0%</span>
+      </div>
+      <p class="loader-text" id="loader-text">Initializing Systems...</p>
+    </div>
+  </div>
+
+  <!-- ========== SCROLL PROGRESS ========== -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Aswin.E Home">
+        <span class="logo-bracket">&lt;</span>AE<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home" class="nav-link active" aria-label="Home">Home</a></li>
+        <li><a href="#about" class="nav-link" aria-label="About">About</a></li>
+        <li><a href="#skills" class="nav-link" aria-label="Skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" aria-label="Experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" aria-label="Projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" aria-label="Certifications">Certifications</a></li>
+        <li><a href="#education" class="nav-link" aria-label="Education">Education</a></li>
+
+        <li><a href="#contact" class="nav-link" aria-label="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero" aria-label="Hero Section">
+    <!-- Animated Background Particles -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="particle" style="--x:10%;--y:20%;--s:4px;--d:3s;"></div>
+      <div class="particle" style="--x:25%;--y:60%;--s:6px;--d:5s;"></div>
+      <div class="particle" style="--x:50%;--y:15%;--s:3px;--d:4s;"></div>
+      <div class="particle" style="--x:70%;--y:80%;--s:5px;--d:6s;"></div>
+      <div class="particle" style="--x:85%;--y:35%;--s:4px;--d:3.5s;"></div>
+      <div class="particle" style="--x:15%;--y:75%;--s:7px;--d:7s;"></div>
+      <div class="particle" style="--x:40%;--y:50%;--s:3px;--d:4.5s;"></div>
+      <div class="particle" style="--x:60%;--y:25%;--s:5px;--d:5.5s;"></div>
+      <div class="particle" style="--x:90%;--y:65%;--s:4px;--d:3s;"></div>
+      <div class="particle" style="--x:35%;--y:90%;--s:6px;--d:6.5s;"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Left: Text Content -->
+      <div class="hero-text fade-in">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Available for Opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Aswin.E</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-static">I'm an </span>
+          <span class="hero-typing" id="typing-text" aria-label="Typing animation: Cloud Engineer, DevOps Engineer, AWS Enthusiast"></span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-description">
+          AWS Cloud and DevOps enthusiast with a B.Tech in Artificial Intelligence and Data Science. Skilled in AWS cloud services, Linux administration, deployment workflows, and infrastructure management. Hands-on experience with Amazon EC2, S3, IAM, VPC, RDS, CloudWatch, Git, and cloud resources.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary ripple" aria-label="View Projects">
+            <i class="fas fa-rocket" aria-hidden="true"></i> View Projects
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-secondary ripple" download aria-label="Download Resume">
+            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline ripple" aria-label="Contact Me">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Aswin-Edison" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aswin-edison" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:aswinedison2004@gmail.com" class="social-link" aria-label="Send Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Illustration -->
+      <div class="hero-visual fade-in-right">
+        <div class="profile-card">
+          <div class="profile-ring ring-1" aria-hidden="true"></div>
+          <div class="profile-ring ring-2" aria-hidden="true"></div>
+          <div class="profile-ring ring-3" aria-hidden="true"></div>
+          <div class="profile-avatar">
+            <img src="profile.jpg" alt="Aswin.E - Cloud & DevOps Engineer" />
+          </div>
+          <!-- Floating Tech Badges -->
+          <div class="float-badge badge-aws" aria-label="AWS">
+            <i class="fab fa-aws" aria-hidden="true"></i> AWS
+          </div>
+          <div class="float-badge badge-docker" aria-label="Docker">
+            <i class="fab fa-docker" aria-hidden="true"></i> Docker
+          </div>
+          <div class="float-badge badge-linux" aria-label="Linux">
+            <i class="fab fa-linux" aria-hidden="true"></i> Linux
+          </div>
+          <div class="float-badge badge-git" aria-label="Git">
+            <i class="fab fa-git-alt" aria-hidden="true"></i> Git
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+      <span class="scroll-text">Scroll Down</span>
+      <div class="scroll-dot" aria-hidden="true"></div>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about" aria-label="About Me Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-grid" style="display: block; max-width: 900px; margin: 0 auto;">
+        <!-- About Visual removed per user request -->
+
+        <!-- About Text -->
+        <div class="about-text fade-in-right">
+          <h3 class="about-greeting">Who Am I?</h3>
+          <p class="about-paragraph">
+            I'm <strong>Aswin.E</strong>, a B.Tech graduate in <strong>Artificial Intelligence &amp; Data Science</strong>, 
+            passionate about Cloud Computing and DevOps engineering. My academic journey has given me a strong 
+            foundation in technology, while my self-driven learning has led me deep into the world of 
+            cloud infrastructure and modern deployment practices.
+          </p>
+          <p class="about-paragraph">
+            I'm enthusiastic about <strong>AWS</strong>, <strong>Linux</strong>, <strong>Docker</strong>, 
+            <strong>Kubernetes</strong>, <strong>Terraform</strong>, <strong>Jenkins</strong>, 
+            <strong>CI/CD pipelines</strong>, and <strong>Infrastructure as Code</strong>. 
+            I believe in automating everything and building systems that are resilient, scalable, and efficient.
+          </p>
+          <p class="about-paragraph">
+            I'm actively seeking exciting <strong>Cloud Engineer</strong> and <strong>DevOps Engineer</strong> opportunities 
+            where I can contribute, grow, and help build the next generation of cloud-native applications.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              <span>B.Tech – AI &amp; Data Science</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <span>AWS Cloud Enthusiast</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-cogs" aria-hidden="true"></i>
+              <span>DevOps &amp; Automation</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Tamil Nadu, India</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary ripple" aria-label="Get in touch with Aswin.E">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="section skills" aria-label="Skills Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>      <!-- Skills Categories -->
+      <div class="skills-tabs" role="tablist" aria-label="Skills categories">
+        <button class="skill-tab active" data-category="cloud" role="tab" aria-selected="true" aria-controls="cloud-skills">
+          <i class="fas fa-cloud" aria-hidden="true"></i> Cloud &amp; DevOps
+        </button>
+        <button class="skill-tab" data-category="python" role="tab" aria-selected="false" aria-controls="python-skills">
+          <i class="fab fa-python" aria-hidden="true"></i> Python
+        </button>
+
+        <button class="skill-tab" data-category="data" role="tab" aria-selected="false" aria-controls="data-skills">
+          <i class="fas fa-chart-bar" aria-hidden="true"></i> Data Science
+        </button>
+        <button class="skill-tab" data-category="web" role="tab" aria-selected="false" aria-controls="web-skills">
+          <i class="fas fa-code" aria-hidden="true"></i> Web Dev
+        </button>
+      </div>
+
+      <!-- Cloud & DevOps Skills -->
+      <div class="skills-grid active" id="cloud-skills" role="tabpanel" aria-label="Cloud and DevOps skills">
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#FF9900;" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+          <h3>Cloud Computing</h3><p>General cloud architecture</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#FF9900;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#FF9900;" aria-hidden="true"><i class="fas fa-server"></i></div>
+          <h3>Amazon EC2</h3><p>Elastic Compute Cloud</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#FF9900;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#569A31;" aria-hidden="true"><i class="fas fa-bucket"></i></div>
+          <h3>Amazon S3</h3><p>Simple Storage Service</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90" style="--bar-color:#569A31;"></div></div><span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#DD344C;" aria-hidden="true"><i class="fas fa-shield-alt"></i></div>
+          <h3>Amazon IAM</h3><p>Identity &amp; Access Management</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="80" style="--bar-color:#DD344C;"></div></div><span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#2563EB;" aria-hidden="true"><i class="fas fa-database"></i></div>
+          <h3>Amazon RDS</h3><p>Relational Database Service</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="75" style="--bar-color:#2563EB;"></div></div><span class="skill-percent">75%</span>
+        </div>
+      </div>
+
+      <!-- Python & Automation Skills -->
+      <div class="skills-grid" id="python-skills" role="tabpanel" aria-label="Python and Automation skills" hidden>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#3776AB;" aria-hidden="true"><i class="fab fa-python"></i></div>
+          <h3>Python</h3><p>General programming &amp; scripting</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90" style="--bar-color:#3776AB;"></div></div><span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#4DABCF;" aria-hidden="true"><i class="fas fa-subscript"></i></div>
+          <h3>NumPy</h3><p>Numerical computing in Python</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#4DABCF;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#150458;" aria-hidden="true"><i class="fas fa-table"></i></div>
+          <h3>Pandas</h3><p>Data manipulation and analysis</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#150458;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#22C55E;" aria-hidden="true"><i class="fas fa-robot"></i></div>
+          <h3>Automation</h3><p>Automating workflows and tasks</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="80" style="--bar-color:#22C55E;"></div></div><span class="skill-percent">80%</span>
+        </div>
+      </div>
+
+
+      <!-- Data Science Skills -->
+      <div class="skills-grid" id="data-skills" role="tabpanel" aria-label="Data Science skills" hidden>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#F29111;" aria-hidden="true"><i class="fas fa-database"></i></div>
+          <h3>SQL</h3><p>Database queries &amp; management</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#F29111;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#38BDF8;" aria-hidden="true"><i class="fas fa-chart-pie"></i></div>
+          <h3>Data Analytics</h3><p>Extracting insights from data</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#38BDF8;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#22C55E;" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+          <h3>Data Analysis</h3><p>Examining and cleaning data</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="80" style="--bar-color:#22C55E;"></div></div><span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#E95420;" aria-hidden="true"><i class="fas fa-chart-area"></i></div>
+          <h3>Data Visualization</h3><p>Visual representation of data</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#E95420;"></div></div><span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#217346;" aria-hidden="true"><i class="fas fa-file-excel"></i></div>
+          <h3>Microsoft Excel</h3><p>Spreadsheet analysis &amp; pivot tables</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90" style="--bar-color:#217346;"></div></div><span class="skill-percent">90%</span>
+        </div>
+      </div>
+
+      <!-- Web Development Skills -->
+      <div class="skills-grid" id="web-skills" role="tabpanel" aria-label="Web Development skills" hidden>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#E34F26;" aria-hidden="true"><i class="fab fa-html5"></i></div>
+          <h3>HTML</h3><p>HyperText Markup Language</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90" style="--bar-color:#E34F26;"></div></div><span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#1572B6;" aria-hidden="true"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS</h3><p>Cascading Style Sheets</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#1572B6;"></div></div><span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card fade-in" tabindex="0">
+          <div class="skill-icon" style="--skill-color:#8C4FFF;" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web Development</h3><p>Full-stack principles &amp; layout</p>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85" style="--bar-color:#8C4FFF;"></div></div><span class="skill-percent">85%</span>
+        </div>
+      </div>   </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section id="experience" class="section experience" aria-label="Experience Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Professional Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- Job 1 -->
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon" aria-hidden="true">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <span class="timeline-date">June 2026 – Present</span>
+                <span class="timeline-type">Internship</span>
+              </div>
+            </div>
+            <h3>DevOps Intern</h3>
+            <h4>Azentra Global — Nagercoil</h4>
+            <ul class="experience-bullets" style="padding-left: 1.2rem; list-style-type: disc; margin: 1rem 0;">
+              <li>Working with AWS cloud infrastructure, Linux servers, and deployment environments.</li>
+              <li>Managing AWS EC2, S3, IAM, VPC, and cloud resources.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tl-tag">AWS</span>
+              <span class="tl-tag">EC2</span>
+              <span class="tl-tag">S3</span>
+              <span class="tl-tag">IAM</span>
+              <span class="tl-tag">RDS</span>
+              <span class="tl-tag">Linux</span>
+              <span class="tl-tag">IaC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot secondary" aria-hidden="true">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon secondary" aria-hidden="true">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <span class="timeline-date">Jul 2025 – Aug 2025</span>
+                <span class="timeline-type">Internship</span>
+              </div>
+            </div>
+            <h3>Web Development Intern</h3>
+            <h4>Codebind Technologies — Chennai</h4>
+            <ul class="experience-bullets" style="padding-left: 1.2rem; list-style-type: disc; margin: 1rem 0;">
+              <li>Developed responsive web pages using HTML and CSS.</li>
+              <li>Learned application hosting and deployment workflows.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tl-tag">HTML</span>
+              <span class="tl-tag">CSS</span>
+              <span class="tl-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon" aria-hidden="true">
+                <i class="fas fa-database"></i>
+              </div>
+              <div>
+                <span class="timeline-date">Jan 2025 – Feb 2025</span>
+                <span class="timeline-type">Internship</span>
+              </div>
+            </div>
+            <h3>Data Analyst Intern</h3>
+            <h4>Feather Software — Nagercoil</h4>
+            <ul class="experience-bullets" style="padding-left: 1.2rem; list-style-type: disc; margin: 1rem 0;">
+              <li>Worked with Python-based data processing workflows.</li>
+              <li>Performed data analysis and visualization activities.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tl-tag">Data Analysis</span>
+              <span class="tl-tag">SQL</span>
+              <span class="tl-tag">Pandas</span>
+              <span class="tl-tag">NumPy</span>
+              <span class="tl-tag">Excel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects" aria-label="Projects Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+        <p class="section-subtitle">Live data fetched directly from <i class="fab fa-github"></i> GitHub</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filters" role="tablist" aria-label="Filter projects by type">
+        <button class="project-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="project-filter-btn" data-filter="Python" role="tab" aria-selected="false">Python</button>
+        <button class="project-filter-btn" data-filter="Jupyter Notebook" role="tab" aria-selected="false">Data Science</button>
+        <button class="project-filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+      </div>
+
+      <!-- Projects Grid (filled dynamically by JS) -->
+      <div class="projects-grid" id="projects-grid" aria-live="polite">
+        <!-- Skeleton loaders shown while fetching -->
+        <div class="project-card skeleton-card" aria-hidden="true"><div class="sk-top"></div><div class="sk-line sk-w70"></div><div class="sk-line sk-w90"></div><div class="sk-line sk-w60"></div><div class="sk-line sk-w40"></div></div>
+        <div class="project-card skeleton-card" aria-hidden="true"><div class="sk-top"></div><div class="sk-line sk-w70"></div><div class="sk-line sk-w90"></div><div class="sk-line sk-w60"></div><div class="sk-line sk-w40"></div></div>
+        <div class="project-card skeleton-card" aria-hidden="true"><div class="sk-top"></div><div class="sk-line sk-w70"></div><div class="sk-line sk-w90"></div><div class="sk-line sk-w60"></div><div class="sk-line sk-w40"></div></div>
+      </div>
+
+      <!-- View All Button -->
+      <div class="projects-cta">
+        <a href="https://github.com/Aswin-Edison" target="_blank" rel="noopener noreferrer" class="btn btn-outline ripple" id="view-all-repos" aria-label="View all GitHub repositories">
+          <i class="fab fa-github" aria-hidden="true"></i> View All Repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section id="certifications" class="section certifications" aria-label="Certifications Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card gh-card" tabindex="0">
+          <div class="cert-icon" style="--cert-icon-color:#FF9900;" aria-hidden="true">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div class="cert-badge" style="background: rgba(255, 153, 0, 0.2); color: #FF9900;" aria-label="Completed">Completed</div>
+          <h3>AWS Cloud Practitioner Essentials</h3>
+          <p>Comprehensive overview of cloud concepts, security, architecture, pricing, and support on AWS.</p>
+          <div class="cert-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Amazon Web Services</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Jun 2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card gh-card" tabindex="0" style="animation-delay: 0.1s;">
+          <div class="cert-icon" style="--cert-icon-color:#0530ad;" aria-hidden="true">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="cert-badge" style="background: rgba(5, 48, 173, 0.2); color: #5c85ff;" aria-label="Completed">Completed</div>
+          <h3>Generative AI in Action</h3>
+          <p>Demonstrates practical knowledge of Generative AI principles, prompt engineering, and real-world applications.</p>
+          <div class="cert-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> IBM</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Aug 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card gh-card" tabindex="0" style="animation-delay: 0.2s;">
+          <div class="cert-icon" style="--cert-icon-color:#005282;" aria-hidden="true">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="cert-badge" style="background: rgba(0, 82, 130, 0.2); color: #4aa3db;" aria-label="Completed">Completed</div>
+          <h3>Machine Learning Fundamentals</h3>
+          <p>Micro-Credential validating foundational understanding of machine learning algorithms and data analytics workflows.</p>
+          <div class="cert-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Alteryx</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Nov 2024</span>
+          </div>
+        </div>
+
+        <div class="cert-card gh-card" tabindex="0" style="animation-delay: 0.3s;">
+          <div class="cert-icon" style="--cert-icon-color:#E95420;" aria-hidden="true">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="cert-badge" style="background: rgba(233, 84, 32, 0.2); color: #E95420;" aria-label="Completed">Completed</div>
+          <h3>Master Data Management for Beginners</h3>
+          <p>Successfully completed the course covering core Master Data Management principles.</p>
+          <div class="cert-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> TCS iON</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Feb 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card gh-card" tabindex="0" style="animation-delay: 0.4s;">
+          <div class="cert-icon" style="--cert-icon-color:#3776AB;" aria-hidden="true">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="cert-badge" style="background: rgba(55, 118, 171, 0.2); color: #3776AB;" aria-label="Completed">Completed</div>
+          <h3>Basics of Python</h3>
+          <p>Successfully completed the Basics of Python course, covering fundamental programming concepts.</p>
+          <div class="cert-meta">
+            <span><i class="fas fa-building" aria-hidden="true"></i> Infosys Springboard</span>
+            <span><i class="fas fa-calendar" aria-hidden="true"></i> Feb 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section id="education" class="section education" aria-label="Education Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon" aria-hidden="true">
+                <i class="fas fa-university"></i>
+              </div>
+              <div>
+                <span class="timeline-date">2022 – 2026</span>
+                <span class="timeline-type">Bachelor of Technology - BTech</span>
+              </div>
+            </div>
+            <h3>Ponjesly College of Engineering </h3>
+            <h4>Artificial Intelligence &amp; Data Science</h4>
+            <div class="timeline-details">
+              <div class="timeline-stat">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Parvathipuram, Alamparai Nagercoil-629 003 Kanyakumari District, Tamil Nadu</span>
+              </div>
+              <div class="timeline-stat">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <span>7.5 CGPA</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot secondary" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon secondary" aria-hidden="true">
+                <i class="fas fa-school"></i>
+              </div>
+              <div>
+                <span class="timeline-date">2021 – 2022</span>
+                <span class="timeline-type">HSC (12th Standard)</span>
+              </div>
+            </div>
+            <h3>Don Bosco Matric Higher Secondary School</h3>
+            <h4>Mathematics with Computer Science</h4>
+            <div class="timeline-details">
+              <div class="timeline-stat">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Midalakadu, Palapallam-629159, Kanyakumari District, Tamil Nadu</span>
+              </div>
+              <div class="timeline-stat">
+                <i class="fas fa-percentage" aria-hidden="true"></i>
+                <span>71.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in" role="listitem">
+          <div class="timeline-dot" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon" aria-hidden="true">
+                <i class="fas fa-school"></i>
+              </div>
+              <div>
+                <span class="timeline-date">2019 – 2020</span>
+                <span class="timeline-type">SSLC (10th Standard)</span>
+              </div>
+            </div>
+            <h3>Ponjesly Public Matric Higher Secondary School</h3>
+            <div class="timeline-details">
+              <div class="timeline-stat">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Nagercoil-629003 Kanyakumari District, Tamil Nadu</span>
+              </div>
+              <div class="timeline-stat">
+                <i class="fas fa-percentage" aria-hidden="true"></i>
+                <span>70.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section id="resume" class="section resume-section" aria-label="Resume Section">
+    <div class="container">
+      <div class="resume-card glass-card fade-in">
+        <div class="resume-left" aria-hidden="true">
+          <div class="resume-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+        </div>
+        <div class="resume-center">
+          <h2>My <span class="gradient-text">Resume</span></h2>
+          <p>Download my resume to learn more about my skills, experience, projects, and education.</p>
+          <div class="resume-highlights">
+            <div class="resume-hl">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>Cloud &amp; DevOps Skills</span>
+            </div>
+            <div class="resume-hl">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>5+ Hands-on Projects</span>
+            </div>
+            <div class="resume-hl">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>B.Tech – AI &amp; DS</span>
+            </div>
+            <div class="resume-hl">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              <span>AWS Enthusiast</span>
+            </div>
+          </div>
+        </div>
+        <div class="resume-right">
+          <a href="assets/resume.pdf" download class="btn btn-primary resume-btn ripple" aria-label="Download Resume PDF">
+            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+          </a>
+          <p class="resume-format">PDF Format • Updated 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact" aria-label="Contact Section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="title-underline" aria-hidden="true"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <h3>Let's Connect!</h3>
+          <p>
+            I'm actively looking for Cloud Engineer and DevOps Engineer opportunities. 
+            Whether you have a question, an opportunity, or just want to say hello — 
+            my inbox is always open!
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:aswinedison2004@gmail.com" class="contact-item" aria-label="Send Email">
+              <div class="contact-item-icon" aria-hidden="true">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">aswinedison2004@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+916383173095" class="contact-item" aria-label="Call Phone">
+              <div class="contact-item-icon phone" aria-hidden="true">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">+91 6383173095</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/aswin-edison" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn Profile">
+              <div class="contact-item-icon linkedin" aria-hidden="true">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/aswin-edison</span>
+              </div>
+            </a>
+            <a href="https://github.com/Aswin-Edison" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="GitHub Profile">
+              <div class="contact-item-icon github" aria-hidden="true">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/Aswin-Edison</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon location" aria-hidden="true">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Nagercoil, Kanyakumari District, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper fade-in-right">
+          <form class="contact-form glass-card" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name <span aria-hidden="true">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user" aria-hidden="true"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="Your Name" required autocomplete="name" aria-required="true" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" aria-required="true" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject <span aria-hidden="true">*</span></label>
+              <div class="input-wrapper">
+                <i class="fas fa-tag" aria-hidden="true"></i>
+                <input type="text" id="contact-subject" name="subject" placeholder="Job Opportunity / Collaboration / Query" required aria-required="true" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-comment-alt" aria-hidden="true"></i>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required aria-required="true"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full ripple" id="submit-btn" aria-label="Send message">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Aswin.E Home">
+            <span class="logo-bracket">&lt;</span>AE<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Cloud &amp; DevOps Engineer passionate about building scalable infrastructure and automating everything.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Aswin-Edison" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/aswin-edison" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="mailto:aswinedison2004@gmail.com" aria-label="Send Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>More</h4>
+          <ul role="list">
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> aswinedison2004@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nagercoil, Kanyakumari District, Tamil Nadu</p>
+          <a href="assets/resume.pdf" download class="btn btn-outline btn-sm" aria-label="Download Resume">
+            <i class="fas fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Aswin.E</strong>.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP BUTTON ========== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
