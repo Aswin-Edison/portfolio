@@ -650,6 +650,36 @@ async function initDynamicProjects() {
     return card;
   }
 
+  // ── Filter logic ────────────────────────────────────────────────────────────
+  // Dynamically remove the categorization filters via DOM
+  const projectFilters = document.querySelector('.project-filters');
+  if (projectFilters) {
+    projectFilters.remove();
+  }
+
+  function applyFilter(filter) {
+    const cards = grid.querySelectorAll('.project-card');
+    cards.forEach(card => {
+      const lang = card.dataset.lang || '';
+      let show = false;
+      if (filter === 'all')              show = true;
+      else if (filter === 'other')       show = !['Python','Jupyter Notebook','JavaScript','TypeScript','HTML','CSS'].includes(lang);
+      else                               show = lang === filter;
+      card.classList.toggle('hidden-card', !show);
+    });
+  }
+
+  document.querySelectorAll('.project-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.project-filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      applyFilter(btn.dataset.filter);
+    });
+  });
 
   // ── Fetch ───────────────────────────────────────────────────────────────────
   try {
